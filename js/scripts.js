@@ -10,7 +10,7 @@ $(function() {
     userName = $("#usersName").val();
     userNumber = parseInt(userInput);
     if(userName === "dave" || userName === "Dave"){
-      daveVHal();
+      daveVHalOn();
     } else if(userInput === "" || userNumber < 0){
       alert("Please enter a positive number");
     } else if(userName === ""){
@@ -21,11 +21,19 @@ $(function() {
     }
   });
 
-  function daveVHal(){
+  function daveVHalOn(){
     $("#halVDave").removeClass("hidden");
     $("#arrayForm").addClass("hidden");
     $("body").addClass("black");
     $( "#halVDave" ).fadeOut(4000);
+    document.addEventListener("click", returnHome);
+  }
+
+  function returnHome(){
+  $("#halVDave").addClass("hidden");
+  $("#arrayForm").removeClass("hidden");
+  $("body").removeClass("black");
+  document.removeEventListener("click", returnHome);
   }
 
   $("#davesLink").click(function(){
