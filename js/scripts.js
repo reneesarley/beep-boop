@@ -4,23 +4,23 @@ function createUsersArray(numberForArray){
   for (var i = 1; i <= numberForArray; i++) {
    usersArray.push(i);
   }
-   return usersArray
+   beepBoopConverter(usersArray)
 }
 
-function beepBoopConverter(){
+function beepBoopConverter(arrayToConvert){
   var convertedNumber
-  var testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-  for(var i = 0; i < testArray.length; i ++){
-    if((testArray[i] % 3) === 0 && testArray[i] != 0){
+  // var testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  for(var i = 0; i < arrayToConvert.length; i ++){
+    if((arrayToConvert[i] % 3) === 0 && arrayToConvert[i] != 0){
       convertedNumber = "I'm sorry, Dave. I'm afraid I can't do that."
-    } else if((testArray[i].toString()).includes("1")){
+    } else if((arrayToConvert[i].toString()).includes("1")){
       convertedNumber = "Boop"
-    } else if((testArray[i].toString()).includes("0")){
+    } else if((arrayToConvert[i].toString()).includes("0")){
       convertedNumber = "Beep"
     } else {
-      convertedNumber = testArray[i]
+      convertedNumber = arrayToConvert[i]
     }
-    console.log(testArray[i] + "=" + convertedNumber);
+    console.log(arrayToConvert[i] + "=" + convertedNumber);
   }
 }
 
