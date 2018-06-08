@@ -9,7 +9,11 @@ $(function() {
     userInput = $("#numberInput").val();
     userName = $("#usersName").val();
     userNumber = parseInt(userInput);
-    if(userInput === ""){
+    if(userName === "dave" || userName === "Dave"){
+      $("#halVDave").removeClass("hidden");
+      $("#arrayForm").addClass("hidden");
+      $("body").addClass("black");
+    } else if(userInput === ""){
       alert("Please enter a number");
     } else if(userName === ""){
         userName = "Dave";
@@ -20,7 +24,9 @@ $(function() {
   });
 
   $("#davesLink").click(function(){
-    $(".hal").addClass("hidden");
+    $("#halVDave").addClass("hidden");
+    $("#arrayForm").removeClass("hidden");
+    $("body").removeClass("black");
   });
 
 });
