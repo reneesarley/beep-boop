@@ -9,6 +9,7 @@ function createUsersArray(numberForArray){
 
 function beepBoopConverter(arrayToConvert){
   var convertedNumber
+  var convertedArray = [];
   // var testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
   for(var i = 0; i < arrayToConvert.length; i ++){
     if((arrayToConvert[i] % 3) === 0 && arrayToConvert[i] != 0){
@@ -20,10 +21,11 @@ function beepBoopConverter(arrayToConvert){
     } else {
       convertedNumber = arrayToConvert[i]
     }
+    convertedArray.push(convertedNumber);
     console.log(arrayToConvert[i] + "=" + convertedNumber);
   }
+  console.log(convertedArray);
 }
-
 
 // user logic
 $(function() {
@@ -34,5 +36,7 @@ $(function() {
     beepBoopConverter(userNumber);
   });
 
-
+  function returnConvertedNumbers(updatedNumbers){
+    $("#results").text(updatedNumbers);
+  }
 });
