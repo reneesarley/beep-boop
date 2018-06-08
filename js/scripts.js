@@ -13,7 +13,7 @@ function beepBoopConverter(numberToConvert){
     convertedNumber = "Beep"
     return convertedNumber
   } else {
-    return false
+    return numberToConvert
   }
 }
 
