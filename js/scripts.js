@@ -20,3 +20,7 @@ function beepBoopConverter(numberToConvert){
 
 
 // user logic
+
+$(function() {
+
+})
