@@ -5,3 +5,15 @@ h1{
 .hidden{
   display: none;
 }
+
+ul{
+list-style: none;
+}
+
+.beep{
+  color: orange;
+  font-stretch: ultra-expanded;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2.25em;
+}
