@@ -31,12 +31,12 @@ $(function() {
   }
 
   function returnHome(){
-  $("#halVDave").addClass("hidden");
-  document.getElementById("halVDave").removeAttribute("style");
-  $("#arrayForm").removeClass("hidden");
-  $("body").removeClass("black");
-  document.getElementById("numberForm").reset();
-  document.removeEventListener("click", returnHome);
+    $("#halVDave").addClass("hidden");
+    document.getElementById("halVDave").removeAttribute("style");
+    $("#arrayForm").removeClass("hidden");
+    $("body").removeClass("black");
+    document.getElementById("numberForm").reset();
+    document.removeEventListener("click", returnHome);
   }
 
 });
@@ -46,7 +46,7 @@ function convertedMessage(updatedNumbers){
   for(var i = 0; i < updatedNumbers.length; i++){
     if(updatedNumbers[i] === "Beep!"){
       $(".results ul").append("<li class='beep'>"+ updatedNumbers[i]+ "</li>");
-    }else if(updatedNumbers[i] === "Boop!"){
+    } else if(updatedNumbers[i] === "Boop!"){
       $(".results ul").append("<li class='boop'>"+ updatedNumbers[i]+ "</li>");
     } else if((updatedNumbers[i].toString()).includes("sorry")){
       $(".results ul").append("<li class='dave'>"+ updatedNumbers[i]+ "</li>");
@@ -63,7 +63,7 @@ function createUsersArray(numberForArray, name){
   for (var i = 0; i <= numberForArray; i++) {
    usersArray.push(i);
   }
-   beepBoopConverter(usersArray, userName)
+  beepBoopConverter(usersArray, userName)
 }
 
 function beepBoopConverter(arrayToConvert, name){

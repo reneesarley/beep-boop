@@ -6,7 +6,11 @@
 
 ## Description
 
-_This application will convert user-inputted numbers into a response of "Beep", "Boop", or "I'm sorry, Dave. I'm afraid I can't do that.". The response will be shown to the user. Each response will remain until the user clears the responses._
+_This application will create an array from 0 up to a number that will be inputted by the user. It will convert the numbers in the array into a response of "Beep", "Boop", or "I'm sorry, Dave. I'm afraid I can't do that.". The response will be shown to the user. Each response will remain until the user submits an new number the responses._
+
+_When a user inputs their name the application will integrate it into the response._
+
+_If the user inputs their name as Dave or dave they will see special message just for Dave. No array will be created._
 
 ## Setup/Installation Requirements
 
