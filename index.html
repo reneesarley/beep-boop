@@ -6,20 +6,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
-    <title>Beep Boop Converter</title>
+    <title>HAL's Array Builder</title>
   </head>
   <body>
     <div class="container">
-      <h1>Beep Boop Converter</h1>
-      <form id="numberForm" action="index.html" method="post">
-        <div class="form-group">
-          <label class="" for="usersNumber">Enter a number:</label>
-          <input id="numberInput" class="form-control"type="number" name="usersNumber">
-        </div>
-        <button type="submit" name="button" id="userSubmit">Submit</button>
-      </form>
-    </div>
-    <div id="results">
+      <div class="jumbotron">
+        <h1 class ="display-4">HAL's Array Builder</h1>
+        <p class="lead">Let HAL build you an array. Just enter any number and HAL will create an array, starting at 0 and ending at your number. It's so efficient!</p>
+        <hr class="my-4">
+        <form id="numberForm" action="index.html" method="post">
+          <div class="form-group">
+            <label class="" for="usersNumber">Enter your number here:</label>
+            <input id="numberInput" class="form-control"type="number" name="usersNumber">
+          </div>
+          <button type="submit" name="button" id="userSubmit">Submit</button>
+        </form>
+      </div>
+      </div>
+    <div class="results hidden">
+      test
     </div>
   </body>
 </html>
