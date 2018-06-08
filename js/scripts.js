@@ -10,11 +10,9 @@ $(function() {
     userName = $("#usersName").val();
     userNumber = parseInt(userInput);
     if(userName === "dave" || userName === "Dave"){
-      $("#halVDave").removeClass("hidden");
-      $("#arrayForm").addClass("hidden");
-      $("body").addClass("black");
-    } else if(userInput === ""){
-      alert("Please enter a number");
+      daveVHal();
+    } else if(userInput === "" || userNumber < 0){
+      alert("Please enter a positive number");
     } else if(userName === ""){
         userName = "Dave";
         createUsersArray(userNumber, userName);
@@ -22,6 +20,13 @@ $(function() {
         createUsersArray(userNumber, userName);
     }
   });
+
+  function daveVHal(){
+    $("#halVDave").removeClass("hidden");
+    $("#arrayForm").addClass("hidden");
+    $("body").addClass("black");
+    $( "#halVDave" ).fadeOut(4000);
+  }
 
   $("#davesLink").click(function(){
     $("#halVDave").addClass("hidden");
