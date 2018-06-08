@@ -4,7 +4,9 @@ $(function() {
     event.preventDefault();
     var userInput = $("#numberInput").val();
     var userNumber = parseInt(userInput);
-    createUsersArray(userNumber);
+    var userName = $("#usersName").val();
+    alert(userName);
+    createUsersArray(userNumber, userName);
   });
 });
 
@@ -25,20 +27,21 @@ function convertedMessage(updatedNumbers){
 }
 
 // business logic
-function createUsersArray(numberForArray){
+function createUsersArray(numberForArray, name){
   var usersArray = [];
+  var userName = name
   for (var i = 0; i <= numberForArray; i++) {
    usersArray.push(i);
   }
-   beepBoopConverter(usersArray)
+   beepBoopConverter(usersArray, userName)
 }
 
-function beepBoopConverter(arrayToConvert){
+function beepBoopConverter(arrayToConvert, name){
   var convertedNumber
   var convertedArray = [];
   for(var i = 0; i < arrayToConvert.length; i ++){
     if((arrayToConvert[i] % 3) === 0 && arrayToConvert[i] != 0){
-      convertedNumber = "I'm sorry, Dave. I'm afraid I can't do that."
+      convertedNumber = "I'm sorry, " + name + " I'm afraid I can't do that."
     } else if((arrayToConvert[i].toString()).includes("1")){
       convertedNumber = "Boop!"
     } else if((arrayToConvert[i].toString()).includes("0")){
