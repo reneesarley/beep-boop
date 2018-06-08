@@ -7,18 +7,21 @@ function createUsersArray(numberForArray){
    return usersArray
 }
 
-function beepBoopConverter(numberToConvert){
+function beepBoopConverter(){
   var convertedNumber
-  if((numberToConvert % 3) === 0 && numberToConvert != 0){
-    convertedNumber = "I'm sorry, Dave. I'm afraid I can't do that."
-  } else if((numberToConvert.toString()).includes("1")){
-    convertedNumber = "Boop"
-  } else if((numberToConvert.toString()).includes("0")){
-    convertedNumber = "Beep"
-  } else {
-    convertedNumber = numberToConvert
+  var testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  for(var i = 0; i < testArray.length; i ++){
+    if((testArray[i] % 3) === 0 && testArray[i] != 0){
+      convertedNumber = "I'm sorry, Dave. I'm afraid I can't do that."
+    } else if((testArray[i].toString()).includes("1")){
+      convertedNumber = "Boop"
+    } else if((testArray[i].toString()).includes("0")){
+      convertedNumber = "Beep"
+    } else {
+      convertedNumber = testArray[i]
+    }
+    console.log(testArray[i] + "=" + convertedNumber);
   }
-  console.log("The converted number is:" + convertedNumber);
 }
 
 
