@@ -18,6 +18,11 @@ $(function() {
         createUsersArray(userNumber, userName);
     }
   });
+
+  $("#davesLink").click(function(){
+    $(".hal").addClass("hidden");
+  });
+
 });
 
 function convertedMessage(updatedNumbers){
