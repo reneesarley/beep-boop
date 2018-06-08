@@ -1,20 +1,16 @@
 // business logic
 function beepBoopConverter(numberToConvert){
-  // convert number input to string to emulate user inputs
   var convertedNumber
-
   if((numberToConvert % 3) === 0 && numberToConvert != 0){
     convertedNumber = "I'm sorry, Dave. I'm afraid I can't do that."
-    return convertedNumber
   } else if((numberToConvert.toString()).includes("1")){
     convertedNumber = "Boop"
-    return convertedNumber
   } else if((numberToConvert.toString()).includes("0")){
     convertedNumber = "Beep"
-    return convertedNumber
   } else {
-    return numberToConvert
+    convertedNumber = numberToConvert
   }
+  console.log("The converted number is:" + convertedNumber);
 }
 
 
@@ -22,5 +18,10 @@ function beepBoopConverter(numberToConvert){
 // user logic
 
 $(function() {
-
-})
+  $("#numberForm").submit(function(event){
+    event.preventDefault();
+    var userNumber = $("#numberInput").val();
+    console.log("Users input is: " + userNumber);
+    beepBoopConverter(userNumber);
+  });
+});

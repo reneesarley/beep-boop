@@ -11,7 +11,16 @@
   <body>
     <div class="container">
       <h1>Beep Boop Converter</h1>
+      <form id="numberForm" action="index.html" method="post">
+        <div class="form-group">
+          <label class="" for="usersNumber">Enter a number:</label>
+          <input id="numberInput" class="form-control"type="number" name="usersNumber">
+        </div>
+        <button type="submit" name="button" id="userSubmit">Submit</button>
+      </form>
     </div>
-
+    <div id="results">
+      This is where the converted results will go.
+    </div>
   </body>
 </html>
