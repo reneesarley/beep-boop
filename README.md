@@ -24,6 +24,7 @@ _This application will convert user-inputted numbers into a response of "Beep", 
 | Program converts 0 to Beep | 0 | Beep |
 | Program converts 1 to Beep | 1  | Boop|
 | Program converts numbers that are divisible by 3 to "I'm sorry Dave. I'm afraid I can't do that." | 3 | I'm sorry Dave. I'm afraid I can't do that. |
+| Program ignores numbers that don't contain 1 or 0 and aren't divisible by 3| 4| 4 |
 | Program converts multiple digit numbers that contain 0 to "Beep"   | 200 | Beep |
 | Program converts multiple digit numbers that contain 1 to "Boop" | 10 | Boop |
 | Program converts multiple digit numbers that contain 3 to "I'm sorry Dave. I'm afraid I can't do that." | 30 | I'm sorry Dave. I'm afraid I can't do that. |
