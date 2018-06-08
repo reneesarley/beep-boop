@@ -6,22 +6,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
-    <title>Welcome to the HAL 9000 Array Builder</title>
+    <title>2001: An Array Builder</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1 class ="display-4">Welcome to the HAL 9000 Array Builder!</h1>
-        <p class="lead">Let HAL 9000 build you an array. Just enter any number and HAL will create an array starting at 0 and ending at your number. It's so efficient!</p>
+        <h1 class ="display-4">2001: an array builder</h1>
+        <p class="lead">Let HAL 9000 build you an array. Just enter any number and HAL will create an array starting at 0 and ending at your number.</p>
         <hr class="my-4">
         <form id="numberForm" action="index.html" method="post">
-          <div class="form-group">
-            <label class="" for="usersName">Please tell me your name:</label>
-            <input id="usersName" class="form-control" name="usersName" type="text">
-          </div>
-          <div class="form-group">
-            <label class="" for="usersNumber">Enter your number here:</label>
-            <input id="numberInput" class="form-control"type="number" name="usersNumber">
+          <div class="row">
+            <div class="form-group col">
+              <label class="" for="usersName">Please tell me your name:</label>
+              <input id="usersName" class="form-control" name="usersName" type="text">
+            </div>
+            <div class="form-group col">
+              <label  for="usersNumber">Please enter your number here:</label>
+              <input id="numberInput" class="form-control required"type="number" name="usersNumber">
+              <p id="required">required</p>
+            </div>
           </div>
           <button type="submit" name="button" id="userSubmit">Submit</button>
         </form>
