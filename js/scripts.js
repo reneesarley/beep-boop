@@ -4,17 +4,19 @@ $(function() {
     event.preventDefault();
     var userInput = $("#numberInput").val();
     var userName = $("#usersName").val();
-    if(userInput === ""){      
+    var userNumber = parseInt(userInput);
+    if(userInput === ""){
       alert("Please enter a number");
+    } else if(userName === ""){
+        userName = "Dave";
+        createUsersArray(userNumber, userName);
     } else {
-        var userNumber = parseInt(userInput);
-       createUsersArray(userNumber, userName);
+        createUsersArray(userNumber, userName);
     }
   });
 });
 
 function convertedMessage(updatedNumbers){
-  // $(".results").text(updatedNumbers);
   $(".results").removeClass("hidden");
   for(var i = 0; i < updatedNumbers.length; i++){
     if(updatedNumbers[i] === "Beep!"){
