@@ -3,10 +3,13 @@ $(function() {
   $("#numberForm").submit(function(event){
     event.preventDefault();
     var userInput = $("#numberInput").val();
-    var userNumber = parseInt(userInput);
     var userName = $("#usersName").val();
-    alert(userName);
-    createUsersArray(userNumber, userName);
+    if(userInput === ""){      
+      alert("Please enter a number");
+    } else {
+        var userNumber = parseInt(userInput);
+       createUsersArray(userNumber, userName);
+    }
   });
 });
 
