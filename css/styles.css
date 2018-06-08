@@ -16,28 +16,9 @@ h1{
   text-align: center;
 }
 
-.hal h3{
-  margin-top: -40%;
-  color: lightblue;
-  text-align: center;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-size: .75em;
-  width: 100%;
-}
-.hal h3:hover{
-  cursor: pointer;
-}
-
-
-
 .hal img{
   width: 100%;
   height: 100%;
-
-  /* margin-left: 50%
-  margin-right: 50% */
 }
 
 #required{

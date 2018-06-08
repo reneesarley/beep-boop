@@ -25,22 +25,19 @@ $(function() {
     $("#halVDave").removeClass("hidden");
     $("#arrayForm").addClass("hidden");
     $("body").addClass("black");
-    $( "#halVDave" ).fadeOut(4000);
+    $("#results").addClass("hidden");
+    $("#halVDave").fadeOut(4000);
     document.addEventListener("click", returnHome);
   }
 
   function returnHome(){
   $("#halVDave").addClass("hidden");
+  document.getElementById("halVDave").removeAttribute("style");
   $("#arrayForm").removeClass("hidden");
   $("body").removeClass("black");
+  document.getElementById("numberForm").reset();
   document.removeEventListener("click", returnHome);
   }
-
-  $("#davesLink").click(function(){
-    $("#halVDave").addClass("hidden");
-    $("#arrayForm").removeClass("hidden");
-    $("body").removeClass("black");
-  });
 
 });
 
