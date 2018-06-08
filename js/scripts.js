@@ -1,4 +1,12 @@
 // business logic
+function createUsersArray(numberForArray){
+  var usersArray = [];
+  for (var i = 1; i <= numberForArray; i++) {
+   usersArray.push(i);
+  }
+   return usersArray
+}
+
 function beepBoopConverter(numberToConvert){
   var convertedNumber
   if((numberToConvert % 3) === 0 && numberToConvert != 0){
@@ -14,9 +22,7 @@ function beepBoopConverter(numberToConvert){
 }
 
 
-
 // user logic
-
 $(function() {
   $("#numberForm").submit(function(event){
     event.preventDefault();
@@ -24,4 +30,6 @@ $(function() {
     console.log("Users input is: " + userNumber);
     beepBoopConverter(userNumber);
   });
+
+
 });
