@@ -11,6 +11,7 @@ h1{
 
 h4{
   text-align: center;
+  text-transform: uppercase;
 }
 
 .hidden{
@@ -49,8 +50,8 @@ font-weight: bold;
 
 .dave{
   color: grey;
-  font-family: serif;
-  font-weight: bolder;
+  font-family: sans-serif;
+  font-weight: lighter;
   font-size: 1.25em;
   text-align: center;
 }

@@ -2,9 +2,13 @@
 $(function() {
   $("#numberForm").submit(function(event){
     event.preventDefault();
-    var userInput = $("#numberInput").val();
-    var userName = $("#usersName").val();
-    var userNumber = parseInt(userInput);
+    var userInput
+    var userName
+    var userNumber
+    $(".results ul").text("");
+    userInput = $("#numberInput").val();
+    userName = $("#usersName").val();
+    userNumber = parseInt(userInput);
     if(userInput === ""){
       alert("Please enter a number");
     } else if(userName === ""){
