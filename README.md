@@ -27,6 +27,7 @@ _This application will convert user-inputted numbers into a response of "Beep", 
 | Program converts multiple digit numbers that contain 0 to "Beep"   | 200 | Beep |
 | Program converts multiple digit numbers that contain 1 to "Boop" | 10 | Boop |
 | Program converts multiple digit numbers that contain 3 to "I'm sorry Dave. I'm afraid I can't do that." | 30 | I'm sorry Dave. I'm afraid I can't do that. |
+| Program will creat an array from 1 up to a number | 5 | [1, 2, 3, 4, 5] |
 
 ## Known Bugs
 
