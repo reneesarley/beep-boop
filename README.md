@@ -15,7 +15,7 @@ _If the user inputs their name as Dave or dave they will see special message jus
 ## Setup/Installation Requirements
 
 * _This project can be cloned from the GitHub repo here: https://github.com/reneesarley/beep-boop_
-* _The project can be viewed online here:_
+* _The project can be viewed online here: https://reneesarley.github.io/beep-boop/_
 
 ## Specifications
 
