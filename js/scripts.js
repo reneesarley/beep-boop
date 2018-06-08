@@ -14,6 +14,10 @@ function convertedMessage(updatedNumbers){
   for(var i = 0; i < updatedNumbers.length; i++){
     if(updatedNumbers[i] === "Beep!"){
       $(".results ul").append("<li class='beep'>"+ updatedNumbers[i]+ "</li>");
+    }else if(updatedNumbers[i] === "Boop!"){
+      $(".results ul").append("<li class='boop'>"+ updatedNumbers[i]+ "</li>");
+    } else if((updatedNumbers[i].toString()).includes("sorry")){
+      $(".results ul").append("<li class='dave'>"+ updatedNumbers[i]+ "</li>");
     } else{
     $(".results ul").append("<li>"+ updatedNumbers[i]+ "</li>");
     }

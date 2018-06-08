@@ -8,6 +8,7 @@ h1{
 
 ul{
 list-style: none;
+font-weight: bold;
 }
 
 .beep{
@@ -16,4 +17,19 @@ list-style: none;
   font-family: monospace;
   font-weight: bolder;
   font-size: 2.25em;
+}
+.boop{
+  color: green;
+  font-stretch: ultra-expanded;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 1.25em;
+  letter-spacing: 1em;
+}
+
+.dave{
+  color: grey;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 1.25em;
 }
