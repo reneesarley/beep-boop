@@ -12,8 +12,11 @@ function beepBoopConverter(numberToConvert){
   } else if(numberToConvert === 0){
     convertedNumber = "Beep"
     return convertedNumber
-  } else if((numberToConvert.toString()).includes("0")){
+  } else if((numberToConvert.toString()).includes("1")){
     convertedNumber = "Boop"
+    return convertedNumber
+  } else if((numberToConvert.toString()).includes("0")){
+    convertedNumber = "Beep"
     return convertedNumber
   } else {
     return numberToConvert
